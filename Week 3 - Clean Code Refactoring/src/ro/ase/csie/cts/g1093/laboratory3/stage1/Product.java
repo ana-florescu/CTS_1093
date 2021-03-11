@@ -3,11 +3,11 @@ package ro.ase.csie.cts.g1093.laboratory3.stage1;
 
 public class Product {
 	public static final int MAX_ACCOUNT_AGE = 10;
+	public static final float MAX_FIDELITY_DISCOUNT = 0.15f;
 	
-
 	public float getFinalPrice(int productType, float initialPrice, int accountAgeInYears) {
 		float finalPrice = 0;
-		float fidelityDiscount = (accountAgeInYears > MAX_ACCOUNT_AGE) ? (float) 15 / 100 : (float) accountAgeInYears / 100;
+		float fidelityDiscount = (accountAgeInYears > MAX_ACCOUNT_AGE) ? (float) MAX_FIDELITY_DISCOUNT : (float) accountAgeInYears / 100;
 		if (productType == 1) {
 			finalPrice = initialPrice;
 		} else if (productType == 2) {
