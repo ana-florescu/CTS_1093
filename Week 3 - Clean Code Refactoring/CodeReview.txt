@@ -1,13 +1,19 @@
 Code Review
 
-1. Naming conventions
-
+Stage 1. Naming conventions
 - rename class CLASA1 to something more meaningful
 - rename Calculeaza, use small caps
 - rename the function arguments
 - rename "rezultat" , "valoare"
 - format code
-
 - remove magic numbers
 
+Stage 2. KISS, Single Responsibility -> reduce functions complexity
+- remove the switch by using a generic approach for each product type
+- out-source the validations
+- out-source the way the fidelity discount is computed
 
+Stage 3. Dependency Inversion Principle(DIP)
+- remove the dependency regarding the validation of input values 
+- remove the dependency on the static values - they are given by the marketing team
+- remove the dependency on the way fidelity discount is computed - marketing will decide
