@@ -1,6 +1,8 @@
-package ro.ase.csie.cts.g1093.dp.factory.simple;
+package src.ro.ase.csie.cts.g1093.dp.factory.simple;
 
-public abstract class AbstractWeapon {
+import ro.ase.csie.cts.g1093.dp.factory.simple.String;
+
+public abstract class AbstractWeapon  {
 	String color;
 	int power;
 	
